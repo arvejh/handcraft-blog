@@ -14,20 +14,58 @@
       color: #333;
       direction: rtl;
     }
+
+    /* استایل نوار ابزار */
+    .navbar {
+      background-color: #333; /* رنگ پس‌زمینه نوار ابزار */
+      overflow: hidden;
+      font-family: Arial, sans-serif; /* فونت نوار ابزار */
+    }
+
+    /* استایل تب‌های نوار ابزار */
+    .navbar a {
+      float: right; /* قرار دادن تب‌ها به سمت راست */
+      display: block;
+      color: #f2f2f2; /* رنگ متن */
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* تغییر رنگ تب‌ها هنگام هاور */
+    .navbar a:hover {
+      background-color: #ddd; /* رنگ پس‌زمینه هنگام هاور */
+      color: black; /* رنگ متن هنگام هاور */
+    }
+
+    /* استایل هدر */
     header {
       text-align: center;
       margin-bottom: 30px;
     }
+
     h1 {
       margin: 0;
       font-weight: 700;
+      color: #000000; /* رنگ برای <h1> */
     }
+
+    h2 {
+      color: #000000; /* رنگ برای <h2> */
+    }
+
+    h3 {
+      color: #FF7F32; /* رنگ برای <h3> */
+    }
+
     .post {
       background: #fff;
       padding: 20px;
       border-radius: 6px;
       box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
     }
+
     .post img {
       max-width: 100%;
       border-radius: 6px;
@@ -36,16 +74,19 @@
       margin-left: auto;
       margin-right: auto;
     }
+
     .description {
       text-align: center;
       font-size: 1.1rem;
       margin-bottom: 20px;
       line-height: 1.5;
     }
+
     .keywords {
       font-size: 0.9rem;
       color: #666;
     }
+
     .keywords a {
       background: #000000;
       color: #FF7F32;
@@ -57,22 +98,23 @@
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
+
     .keywords a:hover {
       background: #0f5132;
       color: #d1e7dd;
     }
-    h1 {
-      color: #000000; /*  <h1> */
-    }
-    h2 {
-      color: #000000; /*  <h2> */
-    }
-    h3 {
-      color: #FF7F32 /* <h3> */
-    }
   </style>
 </head>
 <body>
+
+  <!-- نوار ابزار -->
+  <div class="navbar">
+    <a href="#home">خانه</a>
+    <a href="#about">درباره پایگاه داده</a>
+    <a href="#services">پژوهشها</a>
+    <a href="#contact">تماس با ما</a>
+  </div>
+
   <header>
     <h1>صنایع دستی ایران را بشناسیم</h1>
     <h2>Let's Know Iran's Handicrafts</h2>
@@ -80,11 +122,11 @@
   </header>
 
   <article class="post">
-    <img src="handcraft.jpg" alt="صنایع دستی" />
+    <img src="handcraft.jpg" alt="رشتی دوزی" />
     <p class="description">
       این پایگاه به معرفی انواع صنایع دستی ایران اختصاص دارد. شما با شناخت صنایع دستی ایران این میراث را زنده نگه می‌دارید.
     </p>
-    <p class="description">This website showcases Iran's unique handicrafts. By knowing Iranian handicrafts, you will preserve this heritage
+    <p class="description">This website showcases Iran's handicrafts. By knowing Iranian handicrafts, you will preserve this heritage
     </p>
     <div class="keywords">
       <a href="https://fa.wikipedia.org/wiki/ایران" target="_blank" rel="noopener noreferrer">نساجی سنتی</a>
@@ -94,5 +136,6 @@
       <a href="https://fa.wikipedia.org/wiki/ساخت_دستی" target="_blank" rel="noopener noreferrer">آبگینه</a>
     </div>
   </article>
+
 </body>
 </html>
