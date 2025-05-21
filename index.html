@@ -135,6 +135,17 @@
       <a href="https://fa.wikipedia.org/wiki/ساخت_دستی" target="_blank" rel="noopener noreferrer">آبگینه</a>
     </div>
   </article>
+ <script>
+    // جلوگیری از کلیک راست موس
+    document.addEventListener('contextmenu', event => event.preventDefault());
 
+    // جلوگیری از کلیدهای میانبر Ctrl+C
+    document.addEventListener('keydown', function(event) {
+      if (event.ctrlKey && (event.key === 'c' || event.key === 'C')) {
+        event.preventDefault();
+        alert('کپی کردن متن غیرفعال است.');
+      }
+    });
+  </script>
 </body>
 </html>
