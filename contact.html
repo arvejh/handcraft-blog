@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>صنایع دستی و هنرهای سنتی ایران</title>
+  <title>تماس با ما - صنایع دستی و هنرهای سنتی ایران</title>
   <style>
     body {
       font-family: Tahoma, sans-serif;
@@ -17,26 +17,24 @@
 
     /* استایل نوار ابزار */
     .navbar {
-      background-color: #333; /* رنگ پس‌زمینه نوار ابزار */
+      background-color: #333;
       overflow: hidden;
-      font-family: Arial, sans-serif; /* فونت نوار ابزار */
+      font-family: Arial, sans-serif;
     }
 
-    /* استایل تب‌های نوار ابزار */
     .navbar a {
-      float: right; /* قرار دادن تب‌ها به سمت راست */
+      float: right;
       display: block;
-      color: #f2f2f2; /* رنگ متن */
+      color: #f2f2f2;
       text-align: center;
       padding: 14px 20px;
       text-decoration: none;
       font-size: 17px;
     }
 
-    /* تغییر رنگ تب‌ها هنگام هاور */
     .navbar a:hover {
-      background-color: #ddd; /* رنگ پس‌زمینه هنگام هاور */
-      color: black; /* رنگ متن هنگام هاور */
+      background-color: #ddd;
+      color: black;
     }
 
     /* استایل هدر */
@@ -48,88 +46,101 @@
     h1 {
       margin: 0;
       font-weight: 700;
-      color: #000000; /* رنگ برای <h1> */
+      color: #000000;
     }
 
     h2 {
-      color: #000000; /* رنگ برای <h2> */
+      color: #000000;
     }
 
     h3 {
-      color: #FF7F32; /* رنگ برای <h3> */
+      color: #FF7F32;
     }
 
-        .container {
-            display: flex;
-            padding: 40px 10%;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
+    /* بقیه استایل‌ها مثل container و single-column که قبلاً داشتید */
+    .container {
+      display: flex;
+      padding: 40px 10%;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
 
-        .column {
-            flex: 1;
-            min-width: 300px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            direction: rtl;
-        }
+    .column {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      direction: rtl;
+    }
 
-        .english-column {
-            direction: ltr;
-        }
+    .english-column {
+      direction: ltr;
+    }
 
-        h2 {
-            color: #FF7F32; /* نارنجی خرمالویی */
-        }
+    h2 {
+      color: #FF7F32;
+    }
 
-        p {
-            color: #000000; /* مشکی */
-        }
+    p {
+      color: #000000;
+    }
 
-        /* تنظیم بخش تک‌ستونه در انتهای صفحه */
-        .single-column {
-            display: block;
-            padding: 20px;
-            text-align: center;
-            background-color: #fff;
-            margin-top: 40px;
-        }
+    .single-column {
+      display: block;
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+      margin-top: 40px;
+    }
 
-        .single-column img {
-            max-width: 50%; /* تصویر به اندازه عرض صفحه تنظیم می‌شود */
-            height: auto; /* ارتفاع تصویر به تناسب عرض تنظیم می‌شود */
-            border-radius: 10px; /* گوشه‌های تصویر کمی گرد می‌شوند */
-        }
-    </style>
+    .single-column img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- ستون فارسی -->
-        <div class="column">
-            <h2>درباره ما</h2>
-            <p>هدف از ایجاد این مخزن داده آشناکردن مخاطب با تعاریف صحیح رشته ها و منابع موثق است. این منابع شامل اقلام منتشرشده و اساتید آگاه صنایع دستی است.</p>
+  <!-- نوار ابزار -->
+  <div class="navbar">
+    <a href="https://arvejh.github.io/handcraft-blog/" target="_blank" rel="noopener noreferrer">خانه</a>
+    <a href="#about">درباره مخزن</a>
+    <a href="contact.html">تماس با ما</a>
+  </div>
 
-            <h2>تماس با ما</h2>
-            <p>a.nikouei@yandex.com</p>
-        </div>
+  <!-- سرصفحه -->
+  <header>
+    <h1>صنایع دستی ایران را بشناسیم</h1>
+    <h2>Let's Know <span style="color: #FF7F32;">Iran</span>'s Handicrafts</h2> 
+    <h3>.</h3>
+  </header>
 
-        <!-- ستون انگلیسی - چپ چین -->
-        <div class="column english-column">
-            <h2>About Us</h2>
-            <p> This data repository aims to familiarize the audience with correct definitions of majors and reliable sources. These sources include published materials, films and craftmasters.</p>
+  <!-- محتوای صفحه تماس با ما -->
+  <div class="container">
+    <div class="column">
+      <h2>درباره ما</h2>
+      <p>هدف از ایجاد این مخزن داده آشناکردن مخاطب با تعاریف صحیح رشته ها و منابع موثق است. این منابع شامل اقلام منتشرشده و اساتید آگاه صنایع دستی است.</p>
 
-            <h2>Contact Us</h2>
-            <p>a.nikouei@yandex.com</p>
-        </div>
+      <h2>تماس با ما</h2>
+      <p>a.nikouei@yandex.com</p>
     </div>
 
-    <!-- بخش تک‌ستونه با تصویر -->
-    <div class="single-column">
-          <p>سفال بدون چرخ کلپورگان Kalpourgan handbuilt pottery</p>
-          <img src="your-image.jpg" alt="سفال بدون چرخ کلپورگان Kalpourgan handbuilt pottery">
+    <div class="column english-column">
+      <h2>About Us</h2>
+      <p>This data repository aims to familiarize the audience with correct definitions of majors and reliable sources. These sources include published materials, films and craftmasters.</p>
+
+      <h2>Contact Us</h2>
+      <p>a.nikouei@yandex.com</p>
     </div>
+  </div>
+
+  <!-- بخش تک‌ستونه با تصویر -->
+  <div class="single-column">
+    <p>سفال بدون چرخ کلپورگان Kalpourgan handbuilt pottery</p>
+    <img src="your-image.jpg" alt="سفال بدون چرخ کلپورگان Kalpourgan handbuilt pottery">
+  </div>
 
 </body>
 </html>
