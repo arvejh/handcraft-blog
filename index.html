@@ -17,16 +17,16 @@
 
     /* استایل نوار ابزار */
     .navbar {
-      background-color: #333; /* رنگ پس‌زمینه نوار ابزار */
+      background-color: #333;
       overflow: hidden;
-      font-family: Arial, sans-serif; /* فونت نوار ابزار */
+      font-family: Arial, sans-serif;
     }
 
     /* استایل تب‌های نوار ابزار */
     .navbar a {
-      float: right; /* قرار دادن تب‌ها به سمت راست */
+      float: right;
       display: block;
-      color: #f2f2f2; /* رنگ متن */
+      color: #f2f2f2;
       text-align: center;
       padding: 14px 20px;
       text-decoration: none;
@@ -35,29 +35,31 @@
 
     /* تغییر رنگ تب‌ها هنگام هاور */
     .navbar a:hover {
-      background-color: #ddd; /* رنگ پس‌زمینه هنگام هاور */
-      color: black; /* رنگ متن هنگام هاور */
+      background-color: #ddd;
+      color: black;
     }
 
     /* استایل هدر */
     header {
+      font-family: 'Pelak', sans-serif; /* فونت مورد نظر شما */
       text-align: center;
       margin-bottom: 30px;
     }
 
     h1 {
+      font-family: 'Pelak', sans-serif; /* فونت مورد نظر شما */
       margin: 30px 0;
       font-weight: 700;
-      color: #000000; /* رنگ برای <h1> */
-      text-align: center; /* وسط‌چین کردن متن */
+      color: #000000;
+      text-align: center;
     }
 
     h2 {
-      color: #000000; /* رنگ برای <h2> */
+      color: #000000;
     }
 
     h3 {
-      color: #FF7F32; /* رنگ برای <h3> */
+      color: #FF7F32;
     }
 
     .post {
@@ -65,8 +67,17 @@
       padding: 20px;
       border-radius: 6px;
       box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
-      text-align: center; /* وسط‌چین کردن محتواهای درون این بخش */
+      text-align: center;
     }
+    
+    h5 {
+            font-family: 'B Sara', sans-serif; /* فونت مورد نظر شما */
+            font-size: 20px; /* اندازه فونت */
+            line-height: 1.6; /* ارتفاع خط */
+            text-align: right; /* راست‌چین کردن متن */
+            text-justify: inter-word; /* چینش دو طرفه متن */
+            direction: rtl; /* تنظیم جهت متن به راست به چپ */
+        }
 
     .post img {
       border: 4px solid #000000;
@@ -74,7 +85,7 @@
       max-width: 100%;
       height: auto;
       margin-bottom: 20px;
-      display: inline-block; /* عکس به صورت بلوک درون خطی است */
+      display: inline-block;
     }
 
     .description {
@@ -92,11 +103,11 @@
     .keywords a {
       background: #404040;
       color: #404040;
-      padding: 5px 12px; /* بزرگ‌تر کردن فضای داخلی (بالا-پایین و چپ-راست) */
+      padding: 5px 12px;
       margin: 0 5px 5px 0;
       font-weight: bold;
-      font-size: 0.9rem; /* بزرگ‌تر کردن اندازه فونت */
-      font-family: 'IranSans', Tahoma, Arial, sans-serif; /* فونت دلخواه اینجا اضافه شده */
+      font-size: 0.9rem;
+      font-family: 'Pelak', Tahoma, Arial, sans-serif;
       border-radius: 20px;
       display: inline-block;
       text-decoration: none;
@@ -104,14 +115,13 @@
       transition: background-color 0.3s ease;
     }
 
-
     .keywords a:hover {
       background: #FF7F32;
       color: #fff;
       font-weight: bold;
     }
 
-    /* تغییر رنگ لینک‌ها (هایپرلینک‌ها) */
+    /* تغییر رنگ لینک‌ها */
     a:link {
       color: #f9f9f9;
       text-decoration: none;
@@ -145,21 +155,25 @@
     <h1>صنایع دستی ایران را بشناسیم</h1>
     <h2>Let's Know <span style="color: #FF7F32;">IRAN</span>'s Handicrafts</h2> 
     <h3>
-        <span style="color: #d3d3d3;">The Website is developed by</span>  
+      <span style="color: #d3d3d3;">The Website is developed by</span>  
       <a href="https://knowledgehouseforcraft.org/Weft/Authors/Azadeh+Nikouei" target="_blank" rel="noopener noreferrer">
         <span style="color: #404040;">Azadeh Nikouei</span> 
       </a> 
-       <span style="color: #d3d3d3;">(AGM) at</span> 
+      <span style="color: #d3d3d3;">(AGM) at</span> 
       <a href="https://en.wikipedia.org/wiki/Ministry_of_Cultural_Heritage,_Tourism_and_Handicrafts" target="_blank" rel="noopener noreferrer">
-       <span style="color: #404040;">MCTH</span> 
+        <span style="color: #404040;">MCTH</span> 
       </a>
     </h3>
   </header>
 
   <article class="post">
     <img src="handcraft.jpg" alt="رشتی دوزی" />
-    <h1>گروه های اصلی صنایع دستی ایران</h1> 
-    
+    <h5>
+      صنایع دستی ایران مجموعه­‌ای از صنایع هنری و هنرهای سنتی است که ضمن رعایت ضوابط شرعی و قانونی با محوریت خلاقیت، ذوق و زیبایی‌شناسی با بهره‌‌گیری از مواد اولیۀ قابل دسترس تولید می‌شود و فرآیند ساخت و تولید محصول به صورت فردی یا گروهی، عمدتاً با دست و با کمک ابزار مورد نیاز انجام می­‌گیرد و محصولات آن واجد ارزش افزوده قابل توجه است. 
+احصای تمامی گروه‌ها و رشته‌های موجود به دلیل احتمال تداخل برخی رشته‌ها امری دشوار است و خالی از خطاهای احتمالی نیست. تاکنون به طور کلی 18 گروه بزرگ و حدود 299 رشته شناسایی شده و در وزارت میراث فرهنگی، گردشگری و صنایع دستی به تصویب رسیده است.
+    </h5>
+    <h1> <span style="color: #FF7F32;">گروه های اصلی صنایع دستی ایران<span> 
+     <h1> <span style="color: #FF7F32;">
     <div class="keywords">
       <a href="https://arvejh.github.io/handcraft-blog/1nassaji.html" target="_blank" rel="noopener noreferrer">نساجی سنتی</a>
       <a href="https://fa.wikipedia.org/wiki/صنایع_دستی" target="_blank" rel="noopener noreferrer">بافته ‌های داری و غیرداری</a>
@@ -181,7 +195,7 @@
       <a href="https://fa.wikipedia.org/wiki/خلاقیت" target="_blank" rel="noopener noreferrer">میناکاری</a>
     </div>
   </article>
- <script>
+  <script>
     // جلوگیری از کلیک راست موس
     document.addEventListener('contextmenu', event => event.preventDefault());
 
@@ -192,6 +206,7 @@
         alert('کپی کردن متن غیرفعال است.');
       }
     });
-  </script>
+  </script> 
+
 </body>
 </html>
